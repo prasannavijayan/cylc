@@ -7,7 +7,7 @@
         <div class="flex grow shrink flex--vertical">
           <div class="flex min">
             <label class="flex" for="toggle-checkbox">
-              <img src="/assets/icon-ham.svg" alt="CYLC Ham Icon" class="icon-ham" />
+              <img src="{{ '/assets/icon-ham.svg' | prepend: site.baseurl }}" alt="CYLC Ham Icon" class="icon-ham" />
             </label>
             <a class="flex" href="/">
                 <div class="flex title">
@@ -17,7 +17,7 @@
                   <div class="text-blue">C</div>
                 </div>
               <div class="flex logo">
-                <img src="/assets/icon-cylc.svg" alt="CYLC Logo" />
+                <img src="{{ '/assets/icon-cylc.svg' | prepend: site.baseurl }}" alt="CYLC Logo" />
               </div>
             </a>
           </div>
@@ -25,19 +25,19 @@
           <input type="checkbox" id="toggle-checkbox">
           <div class="links">
             <div class="link">
-              <a class="page-link" href="/features">Features</a>
+              <a class="page-link" href="{{ '/features' | prepend: site.baseurl }}">Features</a>
             </div>
                   <div class="link">
-              <a class="page-link" href="/screenshots">Screenshots</a>
+              <a class="page-link" href="{{ '/screenshots' | prepend: site.baseurl }}">Screenshots</a>
             </div>
                   <div class="link">
-              <a class="page-link" href="/documentation">Documentation</a>
+              <a class="page-link" href="{{ '/documentation' | prepend: site.baseurl }}">Documentation</a>
             </div>
                   <div class="link">
-              <a class="page-link" href="/users">Users</a>
+              <a class="page-link" href="{{ '/users' | prepend: site.baseurl }}">Users</a>
             </div>
                   <div class="link">
-              <a class="page-link" href="/support">Support</a>
+              <a class="page-link" href="{{ '/support' | prepend: site.baseurl }}">Support</a>
             </div>
           </div>
         </div>
@@ -45,19 +45,19 @@
 
     <div class="links">
       <div class="link">
-        <a class="page-link" href="/features">Features</a>
+        <a class="page-link" href="{{ '/features' | prepend: site.baseurl }}">Features</a>
       </div>
             <div class="link">
-        <a class="page-link" href="/screenshots">Screenshots</a>
+        <a class="page-link" href="{{ '/screenshots' | prepend: site.baseurl }}">Screenshots</a>
       </div>
             <div class="link">
-        <a class="page-link" href="/documentation">Documentation</a>
+        <a class="page-link" href="{{ '/documentation' | prepend: site.baseurl }}">Documentation</a>
       </div>
             <div class="link">
-        <a class="page-link" href="/users">Users</a>
+        <a class="page-link" href="{{ '/users' | prepend: site.baseurl }}">Users</a>
       </div>
             <div class="link">
-        <a class="page-link" href="/support">Support</a>
+        <a class="page-link" href="{{ '/support' | prepend: site.baseurl }}">Support</a>
       </div>
     </div>
   </div>
