@@ -6,6 +6,7 @@ body {
   font-family: 'Titillium Web', sans-serif;
   margin: 0;
   padding: 0;
+  color: #666;
 }
 
 
@@ -28,7 +29,17 @@ body {
   overflow: hidden;
 }
 
+.ai {
+  &-center {
+    align-items: center;
+  }
+}
+
 .jc {
+  &-center {
+    justify-content: center;
+  }
+
   &-space-around {
     justify-content: space-around;
   }
@@ -84,3 +95,4 @@ a {
 
 
 @import "cylc/header";
+@import "cylc/footer";

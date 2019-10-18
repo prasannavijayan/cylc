@@ -1,35 +1,38 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
+<div class="flex footer">
+  <div class="flex container">
+    <div class="flex flex--vertical">
+      <div class="flex heading">Support</div>
+      <div class="flex flex--vertical links">
+        <a class="page-link" href="https://cylc.discourse.group/">Forums</a>
+        <a class="page-link" href="https://github.com/cylc/cylc-flow/issues">Issues</a>
       </div>
     </div>
-
+    <div class="flex flex--vertical">
+      <div class="flex heading">About</div>
+      <div class="flex flex--vertical links">
+          <a class="page-link" href="https://cylc.github.io/users.html">Users</a>
+          <a class="page-link" href="https://cylc.github.io/license.html">License</a>
+        </div>
+    </div>
+    <div class="flex flex--vertical">
+      <div class="flex heading">Development</div>
+      <div class="flex flex--vertical links">
+          <a class="page-link" href="https://github.com/cylc/cylc-flow">Repository</a>
+          <a class="page-link" href="https://github.com/cylc/cylc-flow/blob/master/CHANGES.md">Changes</a>
+        </div>
+    </div>
+    <div class="flex logo ">
+      <a class="flex" href="/">
+        <div class="flex title">
+          <div class="text-red">C</div>
+          <div class="text-yellow">Y</div>
+          <div class="text-green">L</div>
+          <div class="text-blue">C</div>
+        </div>
+      <div class="flex logo">
+        <img src="{{ '/assets/icon-cylc.svg' | prepend: site.baseurl }}" alt="CYLC Logo" />
+      </div>
+    </a>
+    </div>
   </div>
-
-</footer>
+</div>
