@@ -58,6 +58,12 @@ body {
   margin: 0 auto;
 }
 
+.bg {
+    &-grey {
+        background: #eee;
+    }
+}
+
 .text {
     &-normal {
       color: #666666;
@@ -80,7 +86,6 @@ body {
     }
 }
 
-// Text and <a>
 a {
     color: #44B4F8;
     text-decoration: unset;

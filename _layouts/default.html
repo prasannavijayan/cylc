@@ -64,6 +64,34 @@
       </div>
     </div>
 
+    <div class="flex usecase bg-grey">
+      <div class="container flex--vertical">
+        <div class="flex">
+          <h3>Use Case for Cylcing</h3>
+        </div>
+        
+        <div class="flex wrap">
+          <div class="flex flex--vertical">
+            <div class="flex item">
+                <li>Running successive cycles of an environmental forecasting system.</li>
+            </div>
+            <div class="flex item">
+                <li>Splitting long model integrations into many smaller chunks, with associated processing tasks for each chunk.</li>
+              </div>
+          </div>
+
+          <div class="flex flex--vertical">
+              <div class="flex item">
+                  <li>Running successive steps in some multi-task iterative process, such as for optimizing model parameters.</li>
+              </div>
+              <div class="flex item">
+                <li>Processing a series of datasets (potentially concurrently, to the extent possible) as they are generated or received.</li>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
     {%- include footer.html -%}
 
   </body>

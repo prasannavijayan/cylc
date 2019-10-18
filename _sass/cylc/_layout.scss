@@ -10,6 +10,7 @@
     .release {
         flex-basis: 35%;
         padding-left: 5%;
+        min-height: 260px;
     }
 
     .download-buttons {
@@ -40,6 +41,19 @@
     }
 }
 
+.usecase {
+    padding-bottom: 30px;
+    .wrap {
+        flex-wrap: wrap;
+        > div {
+            flex-basis: 50%;
+        }
+    }
+    .item {
+        min-height: 70px;
+    }
+}
+
 @media (max-width:732px)  {
     .herounit {
         .content {
@@ -56,6 +70,20 @@
                 flex-basis: 100%;
                 margin: 0;
             }
+        }
+    }
+
+    .usecase {
+        padding-bottom: 30px;
+        .wrap {
+            > div {
+                flex-basis: 100%;
+            }
+            margin: 0;
+        }
+        .item {
+            padding-bottom: 10px;
+            min-height: 0;
         }
     }
 }
