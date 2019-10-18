@@ -52,8 +52,22 @@
 @media (max-width:732px)  {
   .header {
 
+    #toggle-checkbox:checked ~ .icon-ham {
+      svg {
+        width: 33;
+        height: 28;
+      }
+    }
+
     #toggle-checkbox:checked ~ .links {
       display: flex !important;
+      position: absolute;
+      z-index: 2;
+      background: #eee;
+      width: 100%;
+      margin-top: 80px;
+      left: 0;
+      height: 100vh;
     }
 
     .icon-ham {

@@ -1,0 +1,45 @@
+.herounit {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    .content {
+        flex-basis: 60%;
+    }
+
+    .release {
+        flex-basis: 35%;
+        padding-left: 5%;
+    }
+
+    .download-buttons {
+        flex-wrap: wrap;
+
+        div {
+            flex-basis: 40%;
+        }
+        label {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width:732px)  {
+    .herounit {
+        .content {
+            flex-basis: 100%;
+        }
+
+        .release {
+            flex-basis: 100%;
+            padding-left: 0;
+        }
+
+        .download-buttons {
+            div {
+                flex-basis: 100%;
+                margin: 0;
+            }
+        }
+    }
+}

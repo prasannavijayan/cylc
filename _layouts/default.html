@@ -7,11 +7,44 @@
 
     {%- include header.html -%}
     
-    <!-- <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="flex" aria-label="Content">
+      <div class="container herounit">
+        <div class="flex flex--vertical content">
+          <h3 class="flex">Cylc (“silk”) is a workflow engine for cycling systems</h3>
+          <p>Cylc was originally developed for operational environmental forecasting at NIWA by Dr Hilary Oliver - however it is not specialized to forecasting in any way. It is now an Open Source collaboration involving NIWA, Met Office, and others. It is available under the GPL v3 license.</p>
+          <div class="flex download-buttons">
+            <div class="flex flex--vertical m-r">
+              <label>Production</label>
+              <button class="button flex">
+                <img src={{'/assets/icon-download.svg'}} />
+                Cylc-flow-7.4.3
+              </button>
+              <label>Released 2019-09-09</label>
+            </div>
+            <div class="flex flex--vertical m-l">
+                <label>Preview</label>
+                <button class="button flex">
+                  <img src={{'/assets/icon-download.svg'}} />
+                  Cylc-flow-7.4.3
+                </button>
+                <label>Released 2019-09-09</label>
+              </div>
+          </div>
+        </div>
+        <div class="flex flex--vertical release">
+            <div class="flex jc-center">
+              <h3 class="flex">Next Release</h3>
+            </div>
+            <div class="flex ai-center jc-space-between">
+              <h4 class="flex">Previous Release</h4>
+              <button class="button transparent flex repel">
+                <img src={{'/assets/icon-github.svg'}} alt="Clone Github repo"/>
+                Clone CYLC
+              </button>
+            </div>
+          </div>
       </div>
-    </main> -->
+    </div>
 
     {%- include footer.html -%}
 
