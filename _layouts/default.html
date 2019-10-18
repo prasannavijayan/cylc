@@ -31,16 +31,34 @@
               </div>
           </div>
         </div>
-        <div class="flex flex--vertical release">
-            <div class="flex jc-center">
-              <h3 class="flex">Next Release</h3>
+        <div class="flex flex--vertical release jc-space-around">
+            <div class="flex flex--vertical">
+              <h3 class="flex jc-center">Next Release</h3>
+              <div class="flex">
+                <div class="progressbar">
+                  <div class="progress"></div>
+                  <div class="flex label jc-space-between">
+                    <span>0%</span>
+                    <span>100%</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="flex ai-center jc-space-between">
-              <h4 class="flex">Previous Release</h4>
-              <button class="button transparent flex repel">
-                <img src={{'/assets/icon-github.svg'}} alt="Clone Github repo"/>
-                Clone CYLC
-              </button>
+            <div class="flex flex--vertical">
+              <div class="flex ai-center jc-space-between">
+                <div class="flex">
+                  <h4 class="flex"><b>Previous Release</b></h4>
+                </div>
+                <button class="button transparent flex repel">
+                  <img src={{'/assets/icon-github.svg'}} alt="Clone Github repo"/>
+                  Clone CYLC
+                </button>
+              </div>
+              <div class="flex flex--vertical">
+                  <a href="{{ '/features' | prepend: site.baseurl }}">Cylc-flow-7.4.2</a>
+                  <a href="{{ '/features' | prepend: site.baseurl }}">Cylc-flow-7.4.1</a>
+                  <a href="{{ '/features' | prepend: site.baseurl }}">Cylc-flow-7.4.0</a>
+              </div>
             </div>
           </div>
       </div>
