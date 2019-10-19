@@ -55,10 +55,12 @@
                 <div class="flex">
                   <h4 class="flex"><b>Previous Release</b></h4>
                 </div>
-                <button class="button transparent flex repel">
-                  <img src={{'/assets/icon-github.svg'}} alt="Clone Github repo"/>
-                  Clone CYLC
-                </button>
+                <a href="https://github.com/cylc/cylc.github.io" target="_blank">
+                  <button class="button transparent flex repel">
+                    <img src={{'/assets/icon-github.svg'}} alt="Clone Github repo"/>
+                    Clone CYLC
+                  </button>
+                </a>
               </div>
               <div class="flex flex--vertical">
                   <a href="{{ '/features' | prepend: site.baseurl }}">Cylc-flow-7.4.2</a>
@@ -97,6 +99,36 @@
         </div>
       </div>
     </div>
+
+    <div class="flex secondary">
+        <div class="container flex--vertical">
+          <div class="flex wrap">
+            <div class="flex flex--vertical">
+              <div class="flex item">
+                  <img src={{'/assets/icon-workflow.svg'}} class="icon-workflow" alt="Workflow Icon"/>
+                  <div class="flex">Workflows are configured in a human-readable text format, with programmatic templating - so you can use software development power tools for workflow development.</div>
+              </div>
+              <div class="flex item">
+                  <img src={{'/assets/icon-workflow.svg'}} class="icon-workflow" alt="Workflow Icon"/>
+                  <div class="flex">Scheduling is configured with an efficient cycling graph notation, and task runtime properties with an efficient inheritance hierarchy.</div>
+              </div>
+            
+              <div class="flex item">
+                  <img src={{'/assets/icon-workflow.svg'}} class="icon-workflow" alt="Workflow Icon"/>
+                  <div class="flex">Cylc respects inter-cycle dependence and is not constrained by a traditional global cycle loop, so cycles can interleave naturally for fast scheduling after delays, and for 'off the clock' operation.</div>
+              </div>
+              <div class="flex item">
+                  <img src={{'/assets/icon-workflow.svg'}} class="icon-workflow" alt="Workflow Icon"/>
+                  <div class="flex">Cylc has low admin overhead and a small security footprint, because there is no central server process to manage workflows for all users.</div>  
+              </div>
+              <div class="flex item">
+                  <img src={{'/assets/icon-workflow.svg'}} class="icon-workflow" alt="Workflow Icon"/>
+                  <div class="flex">Plus many other features to support both clock-triggered real time and free-flow scheduling in research and operational environments.</div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     {%- include footer.html -%}
     <script type="text/javascript">

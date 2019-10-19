@@ -55,6 +55,23 @@
     }
 }
 
+.secondary {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .icon-workflow {
+        @extend .flex;
+        width: 150px;
+        @extend .m-r;
+    }
+    .item {
+        @extend .ai-center;
+        div {
+            @extend .m-l;
+        }
+    }
+}
+
 @media (max-width:732px)  {
     .herounit {
         .content {
@@ -85,6 +102,12 @@
         .item {
             padding-bottom: 10px;
             min-height: 0;
+        }
+    }
+
+    .secondary {
+        .item {
+            padding-bottom: 20px;
         }
     }
 }
