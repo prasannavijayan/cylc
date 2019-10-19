@@ -63,9 +63,9 @@
                 </a>
               </div>
               <div class="flex flex--vertical">
-                  <a href="{{ '/features' | prepend: site.baseurl }}">Cylc-flow-7.4.2</a>
-                  <a href="{{ '/features' | prepend: site.baseurl }}">Cylc-flow-7.4.1</a>
-                  <a href="{{ '/features' | prepend: site.baseurl }}">Cylc-flow-7.4.0</a>
+                  <a target="_blank" id='p0'></a>
+                  <a target="_blank" id='p1'></a>
+                  <a target="_blank" id='p2'></a>
               </div>
             </div>
           </div>
@@ -290,6 +290,18 @@
           var latestReleaseDateText = document.getElementById(cylcx + "-latest-release-pubdate-text");
           latestReleaseDateText.innerHTML = `Released: ${publishedAt}`;
       }
+
+      function updateThreePastReleases( releases, from ) {
+        let three = releases.splice(from, 3);
+
+        for( let i = 0; i < 3; i++ ) {
+          var latestReleaseName = document.getElementById('p' + i);
+          latestReleaseName.innerHTML = three[i].name;
+
+          var latestReleaseName = document.getElementById('p' + i);
+          latestReleaseName.href = three[i].html_url;
+        }
+      }
       
       /**
        * Retrieve the releases of the project.
@@ -322,6 +334,7 @@
                           foundCylc8Latest = true;
                       };
                       if (foundCylc7Latest === true && foundCylc8Latest === true) {
+                          updateThreePastReleases( releases, i + 1 );
                           break;
                       };
                   };
