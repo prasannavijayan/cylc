@@ -1,6 +1,6 @@
 ---
-layout: default
+layout: home
 title: Screenshots
 permalink: /screenshots
 ---
-
+Screenshots
