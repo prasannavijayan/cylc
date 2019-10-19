@@ -30,9 +30,10 @@
         background: #eee;
 
         .progress {
-            width: 76%;
+            width: 0;
             height: 5px;
             background: green;
+            transition: width 2s;
         }
 
         .label {
