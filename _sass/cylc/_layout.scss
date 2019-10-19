@@ -72,6 +72,22 @@
     }
 }
 
+.users {
+    align-content: space-between;
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .icon-user {
+        width: 110px;
+        padding: 20px;
+    }
+
+    .coecss, .mets, .ncfas, .isenes {
+        width: 300px;
+    }
+}
+
 @media (max-width:732px)  {
     .herounit {
         .content {
