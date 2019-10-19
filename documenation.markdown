@@ -146,7 +146,7 @@ read the User Guide!
 
     $ cylc graph test1 &
 
-![img/cylc-graph.png](/assets/img/cylc-graph.png)
+<img class="cylc-graph" src="/assets/img/cylc-graph.png" alt="Cylc Graph" />
 
 
 ### Run

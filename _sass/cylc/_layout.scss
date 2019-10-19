@@ -102,6 +102,17 @@
     }
 }
 
+// Extra
+.cylc-graph {
+    width: 150px !important;
+}
+
+.mapcontainer {
+    width: 90%;
+    padding: 20px;
+    max-width: 1100px;
+}
+
 @media (max-width:732px)  {
     .herounit {
         .content {
