@@ -3,14 +3,20 @@ layout: home
 title: Documentation
 permalink: /documentation/
 ---
+# Table of Contents
+{:.no_toc}
+
+* replace-me
+{:toc}
+
 ## Documentation And Information Links
 
 ### The Cylc User Guide
 
 Online copies of the documentation are available here:
 
-* [Multi-Page version](doc/built-sphinx/index.html) (with word search box)
-* [Single-Page version](doc/built-sphinx-single/index.html) - (search with browser Ctrl-F)
+* [Multi-Page version](/../doc/built-sphinx/index.html) (with word search box)
+* [Single-Page version](/../doc/built-sphinx-single/index.html) - (search with browser Ctrl-F)
 
 (Includes the formerly-separate Suite Design Guide).
 
@@ -21,11 +27,11 @@ Hit the "Home" and "End" keys to skip to the beginning and end of the
 presentation, and the 'o' key for a multi-slide summary. This is the
 [dzslides](https://github.com/paulrouget/dzslides) framework by Paul Roget.
 
-* [Cylc Keynote](cylc-keynote-lisbon-Sept2016/index.html) - from
+* [Cylc Keynote](/../cylc-keynote-lisbon-Sept2016/index.html) - from
   the IS-ENES2 Workshop on Workflow in Earth Systems Modeling, Lisbon,
   September 2016
 
-* [Cylc High Level Introduction](BoM-Feb-2017/index.html) - Bureau of
+* [Cylc High Level Introduction](/../BoM-Feb-2017/index.html) - Bureau of
   Meteorology, Melbourne, February 2017
 
 ### Publications, Citations, and References
@@ -65,7 +71,7 @@ Perhaps inevitably as the developers of Cylc we have a rather different view on
 the strengths and weaknesses of the different systems.  In particular we would
 like to address the following points.*
 
-...[CLICK HERE FOR THE FULL RESPONSE](doc/cylc-autosub-response.pdf) (PDF)
+...[CLICK HERE FOR THE FULL RESPONSE](/../doc/cylc-autosub-response.pdf) (PDF)
 
 ---
 
@@ -140,7 +146,7 @@ read the User Guide!
 
     $ cylc graph test1 &
 
-![img/cylc-graph.png](img/cylc-graph.png)
+![img/cylc-graph.png](/assets/img/cylc-graph.png)
 
 
 ### Run
@@ -149,7 +155,7 @@ read the User Guide!
         # OR
     $ gcylc test1 &  # (and run it from the GUI)
 
-![img/gcylc-example.png](img/gcylc-example.png)
+![img/gcylc-example.png](/assets/img/gcylc-example.png)
 
 ### View Task Job Output
 

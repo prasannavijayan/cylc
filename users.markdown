@@ -1,7 +1,6 @@
 ---
-layout: home
+layout: withmap
 title: Users
-permalink: /users/
 ---
 ### Cylc users
 

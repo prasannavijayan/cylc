@@ -1,7 +1,6 @@
 ---
 layout: home
 title: License
-permalink: /license
 ---
 ### Copyright and Terms of Use
 
