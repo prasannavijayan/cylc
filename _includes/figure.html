@@ -1,0 +1,13 @@
+<div class="flex screenshot wrap">
+    <div class="flex flex--vertical grow shrink desc">
+        <h3 class="flex">{{include.title}}</h3>
+        <div class="flex flex--vertical">{{include.desc}}</div>
+    </div>
+    <div class="flex grow shrink image">
+        {% if include.url %}
+            <a href="{{include.url}}">
+                <img style="width:100%" src="{{include.url}}">
+            </a>
+        {% endif %}
+    </div>
+</div>

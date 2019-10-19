@@ -88,6 +88,20 @@
     }
 }
 
+.screenshot {
+    .desc {
+        flex-basis: 60%;
+    }
+    
+    .image {
+        flex-basis: 40%;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width:732px)  {
     .herounit {
         .content {
@@ -124,6 +138,16 @@
     .secondary {
         .item {
             padding-bottom: 20px;
+        }
+    }
+
+    .screenshot {
+        .desc, .image {
+            flex-basis: 100%;
+        }
+    
+        &.wrap {
+            flex-wrap: wrap;
         }
     }
 }
