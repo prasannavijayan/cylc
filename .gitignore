@@ -1,5 +1,21 @@
-_site
-.sass-cache
-.jekyll-cache
+# Jekyll files
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+
+# File extensions
+
+*.dvi
+*.tex
+*.log
+*.4ct
+*.4tc
+*.aux
+*.idv
+*.lg
+*.tmp
+*.toc
+*.xref
+*.sty
+*.cfg
